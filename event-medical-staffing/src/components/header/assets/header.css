@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  order: 1;
+  width: 50%;
+}
+
+.ems-header-logo {
+  width: 10rem;
+}
+
+.nav-container {
+  order: 2;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:focus {
+  font-family: var(--font);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ems-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0px 5px;
+}

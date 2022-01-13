@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./reset.css";
+import "./fonts/fonts.css";
 import "./index.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
