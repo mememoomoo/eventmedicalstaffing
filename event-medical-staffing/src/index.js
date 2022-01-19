@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./reset.css";
-import "./fonts/fonts.css";
 import "./index.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
@@ -13,7 +12,7 @@ import reportWebVitals from "./web-vitals/reportWebVitals";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="employee" element={<Employee />} />

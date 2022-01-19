@@ -1,0 +1,59 @@
+.nav-wrapper {
+  margin-right: 0.5rem;
+}
+
+.menu-button {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: black;
+  border: 0.15rem solid var(--white);
+  border-radius: 2rem;
+}
+
+.nav-container {
+  position: absolute;
+}
+
+.nav-container nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+.nav-container nav a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-container nav a img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.nav-container nav a p {
+  padding-top: 0.25rem;
+}
+
+.nav-container nav a:not(:first-child) {
+  margin-top: 1rem;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:focus {
+  font-family: var(--menu-font);
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  max-width: 3.125rem;
+}
