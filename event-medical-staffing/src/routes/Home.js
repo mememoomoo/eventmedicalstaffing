@@ -1,14 +1,11 @@
 import HomePage from "../components/pages/home/home";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="Home">
-      <Header />
+    <motion.div className="Home">
       <HomePage />
-      <Footer />
-    </div>
+    </motion.div>
   );
 }
 

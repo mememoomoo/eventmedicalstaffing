@@ -1,7 +1,8 @@
 :root {
-  --ems-blue: #00cbff;
+  --ems-blue: #11468f;
+  --ems-red: #f90716;
   --black: #000000;
-  --white: #ffffff;
+  --white: #eeeeee;
   --body-font: "Roboto", sans-serif;
   --menu-font: "Josefin Sans", sans-serif;
   --logo-font: "Pacifico", cursive;

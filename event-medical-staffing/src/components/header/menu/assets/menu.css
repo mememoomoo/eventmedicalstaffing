@@ -5,9 +5,59 @@
 .menu-button {
   width: 3.125rem;
   height: 3.125rem;
-  background-color: black;
-  border: 0.15rem solid var(--white);
   border-radius: 2rem;
+  border: 0.15rem solid var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  font-family: var(--menu-font);
+  color: var(--white);
+}
+
+.menu-button::after {
+  content: "Menu";
+}
+
+.menu-button:hover:after,
+.menu-button:focus:after {
+  content: "x";
+}
+.menu-button:hover,
+.menu-button:focus {
+  -webkit-animation: spin 1s forwards;
+  -moz-animation: spin 1s forwards;
+  animation: spin 1s forwards;
+  animation-delay: 300ms;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
 }
 
 .nav-container {
@@ -56,4 +106,10 @@ nav a:focus {
   letter-spacing: 0.1rem;
   font-size: 1rem;
   max-width: 3.125rem;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a:focus {
+  opacity: 0.5;
 }
