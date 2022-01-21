@@ -1,40 +1,26 @@
 import "./assets/menu.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import homeIcon from "./assets/home-icon.png";
-import aboutIcon from "./assets/about-icon.png";
-import contactIcon from "./assets/contact-icon.png";
+import { motion } from "framer-motion";
+import Toggle from "react-toggle";
+import Items from "./assets/items/items";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
 
 function Menu() {
-  const [isShown, setIsShown] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      className="nav-wrapper"
-      onMouseEnter={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}
-      onClick={() => setIsShown(isShown)}
+    <motion.nav
+      className="menu-button"
+      animate={isOpen ? "open" : "closed"}
+      variants={variants}
     >
-      <div className="menu-button"></div>
-      {isShown && (
-        <div className="nav-container">
-          <nav>
-            <Link to="/">
-              <img src={homeIcon} alt="Home" />
-              <p>Home</p>
-            </Link>
-            <Link to="/about">
-              <img src={aboutIcon} alt="About" />
-              <p>About</p>
-            </Link>
-            <Link to="/contact">
-              <img src={contactIcon} alt="Contact" />
-              <p>Contact</p>
-            </Link>
-          </nav>
-        </div>
-      )}
-    </div>
+      <Toggle onClick={() => setIsOpen((isOpen) => !isOpen)} />
+      <Items />
+    </motion.nav>
   );
 }
 

@@ -14,16 +14,16 @@ import Footer from "./components/footer/footer";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Header />
-    <AnimatePresence initial={true} exitBeforeEnter>
+    <AnimatePresence exitBeforeEnter>
+      <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="employee" element={<Employee />} />
       </Routes>
+      <Footer />
     </AnimatePresence>
-    <Footer />
   </BrowserRouter>,
   document.getElementById("root")
 );

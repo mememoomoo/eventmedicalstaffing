@@ -1,10 +1,11 @@
 import AboutPage from "../components/pages/about/about";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="About">
+    <motion.div exit={{ opacity: 0 }} className="About">
       <AboutPage />
-    </div>
+    </motion.div>
   );
 }
 

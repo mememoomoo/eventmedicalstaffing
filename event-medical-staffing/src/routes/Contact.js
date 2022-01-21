@@ -1,10 +1,11 @@
 import ContactPage from "../components/pages/contact/contact";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <div className="Contact">
+    <motion.div exit={{ opacity: 0 }} className="Contact">
       <ContactPage />
-    </div>
+    </motion.div>
   );
 }
 

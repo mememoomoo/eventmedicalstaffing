@@ -1,10 +1,11 @@
 import EmployeePage from "../components/pages/employee/employee";
+import { motion } from "framer-motion";
 
 function Employee() {
   return (
-    <div className="Employee">
+    <motion.div exit={{ opacity: 0 }} className="Employee">
       <EmployeePage />
-    </div>
+    </motion.div>
   );
 }
 
