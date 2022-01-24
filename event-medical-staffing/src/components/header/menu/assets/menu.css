@@ -64,7 +64,7 @@
   position: absolute;
 }
 
-.nav-container nav {
+.nav-container div nav {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -74,7 +74,7 @@
   padding-top: 1.25rem;
 }
 
-.nav-container nav a {
+.nav-container div nav a {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -82,16 +82,16 @@
   align-items: center;
 }
 
-.nav-container nav a img {
+.nav-container div nav a img {
   width: 3.125rem;
   height: 3.125rem;
 }
 
-.nav-container nav a p {
+.nav-container div nav a p {
   padding-top: 0.25rem;
 }
 
-.nav-container nav a:not(:first-child) {
+.nav-container div nav a:not(:first-child) {
   margin-top: 1rem;
 }
 

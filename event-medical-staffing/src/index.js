@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import "./reset.css";
 import "./index.css";
 import Home from "./routes/Home";
@@ -14,16 +13,14 @@ import Footer from "./components/footer/footer";
 
 ReactDOM.render(
   <BrowserRouter>
-    <AnimatePresence exitBeforeEnter>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="employee" element={<Employee />} />
-      </Routes>
-      <Footer />
-    </AnimatePresence>
+    <Header />
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="employee" element={<Employee />} />
+    </Routes>
+    <Footer />
   </BrowserRouter>,
   document.getElementById("root")
 );
