@@ -1,11 +1,13 @@
 :root {
   --ems-blue: #11468f;
-  --ems-red: #f90716;
-  --black: #000000;
+  --orange: #ff3f00;
+  --black: #000212;
   --white: #eeeeee;
   --body-font: "Roboto", sans-serif;
   --menu-font: "Josefin Sans", sans-serif;
   --logo-font: "Pacifico", cursive;
+  --hero-font: "Mulish", sans-serif;
+  --footer-height: 40vh;
   font-size: 16px;
 }
 

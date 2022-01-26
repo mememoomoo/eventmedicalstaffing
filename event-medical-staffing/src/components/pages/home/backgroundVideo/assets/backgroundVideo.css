@@ -1,8 +1,15 @@
-#concertVideo {
+.background-video-container {
+  background-color: var(--black);
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -999999999;
+  z-index: -99999999;
+}
+
+#concertVideo {
+  width: 100%;
+  height: 100%;
+  filter: blur(0.3rem);
 }

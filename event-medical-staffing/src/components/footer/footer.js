@@ -1,25 +1,25 @@
 import "./assets/footer.css";
-import { Link } from "react-router-dom";
-import logo from "./assets/images/ems-logo-white.png";
+import Menu from "../menu/Menu";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../../routes/Home";
+import About from "../../routes/About";
+import Contact from "../../routes/Contact";
+import Employee from "../../routes/Employee";
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="master-container">
-        <div className="footer-container">
-          <div className="footer-logo">
-            <img src={logo} alt="EMS Logo" />
-          </div>
-          <div className="copyright-container">
-            <p>&copy;{new Date().getFullYear()} Event Medical Staffing</p>
-          </div>
-          <div className="employee-container">
-            <nav>
-              <Link to="/employee">Work With Us</Link>
-            </nav>
-          </div>
+      <BrowserRouter>
+        <Menu />
+        <div className="router-container">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="employee" element={<Employee />} />
+          </Routes>
         </div>
-      </div>
+      </BrowserRouter>
     </div>
   );
 }

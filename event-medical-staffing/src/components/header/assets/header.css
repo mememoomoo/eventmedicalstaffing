@@ -10,7 +10,7 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  border: 0.15rem solid var(--white);
+  /* border: 0.15rem solid var(--white); */
   border-radius: 2rem;
 }
 
