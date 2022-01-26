@@ -26,8 +26,19 @@
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
-  background-color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-copy {
   color: var(--white);
+  font-family: var(--body-font);
+  padding-top: 1rem;
+  font-size: 1.2rem;
 }
 .menu-footer {
   order: 3;

@@ -1,4 +1,4 @@
-import logo from "./assets/ems-logo-white.svg";
+import logo from "./assets/ems-logo-yellow.svg";
 import "./assets/logo.css";
 
 function Logo() {

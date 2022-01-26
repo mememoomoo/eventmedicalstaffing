@@ -7,11 +7,11 @@ function Menu() {
   return (
     <div className="menu-container">
       <div className="menu-wrapper">
-        <Logo />
         <Items />
       </div>
       <div className="menu-content">
-        <p>Lorem Ipsum</p>
+        <Logo />
+        <p className="menu-copy">"Emergency Medical Services For Any Event."</p>
       </div>
       <div class="menu-footer">
         <Copyright />
