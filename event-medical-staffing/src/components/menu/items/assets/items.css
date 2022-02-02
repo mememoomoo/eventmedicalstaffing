@@ -14,7 +14,7 @@
 .footer-nav-container a:hover,
 .footer-nav-container a:visited {
   color: var(--white);
-  font-family: var(--menu-font);
+  font-family: var(--h1-font);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,11 @@
 .footer-nav-container a:hover,
 .footer-nav-container a:focus {
   transform: translateY(-0.5rem);
+}
+
+.home-icon:hover,
+.home-icon:focus {
+  content: "Home";
 }
 
 .footer-nav-container a img {

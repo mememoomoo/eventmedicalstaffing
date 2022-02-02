@@ -4,10 +4,11 @@
   --orange: #ff3f00;
   --black: #2c2e43;
   --white: #eeeeee;
-  --body-font: "Roboto", sans-serif;
+  --body-font: futura-pt, sans-serif;
   --menu-font: "Josefin Sans", sans-serif;
   --logo-font: "Pacifico", cursive;
   --hero-font: "Mulish", sans-serif;
+  --h1-font: futura-pt-bold, sans-serif;
   --footer-height: 40vh;
   font-size: 16px;
 }
